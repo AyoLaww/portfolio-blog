@@ -23,7 +23,7 @@ export async function BlogComponent(){
           <h1 className="text-xl font-bold opacity-50">Blog</h1>
           {data.map((post, idx) => (
             <ul key={idx} className="pt-5 font-medium flex flex-col gap-5 opacity-80">
-              <a href={`/blog/${post.currentSlug}`}>
+              <a href={`/blog/${post.currentSlug}`} className="hover:underline">
                 <li>{post.title}<span className="font-bold font-robotomono ml-10 opacity-50">{post.publishedAt}</span></li>
               </a>
               
