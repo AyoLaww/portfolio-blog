@@ -1,6 +1,8 @@
 import { blogLinks } from "@/app/lib/interface"
 import { client } from "@/app/lib/sanity"
 
+export const revalidate = 30
+
 async function getData(){
   const query = `
   *[_type == 'post'] | order(_createdAt desc){

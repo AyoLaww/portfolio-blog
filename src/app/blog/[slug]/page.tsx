@@ -3,6 +3,9 @@ import { client } from "@/app/lib/sanity"
 import { PortableText } from "next-sanity"
 import Link from "next/link"
 
+
+export const revalidate = 30
+
 async function getData(slug: string){
     const query = `
     *[_type == 'post' && slug.current == '${slug}']{
