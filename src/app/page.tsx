@@ -2,6 +2,8 @@ import { BlogComponent } from "@/components/BlogComponent";
 import { HeaderComponent } from "@/components/HeaderComponent";
 
 
+export const revalidate = 30
+
 export default function Home() {
   return (
     <>
