@@ -10,10 +10,10 @@ export function HeaderComponent(){
               alt="avatar"
               width={500}
               height={500}
-              className="w-24"
+              className="w-20 md:w-20 lg:w-24"
               />
 
-              <h1 className="text-2xl font-bold opacity-85 py-5">Im Law -- A web designer and developer</h1>
+              <h1 className="text-lg  lg:text-3xl font-bold opacity-85 py-5">Im Law -- A web designer and developer</h1>
               <p className="opacity-80">I am currently a university student majoring in computer science. I have a burning passion for tech and entrepreneurship, I am currently working on a few exciting projects like <a href="https://x.com/thewebstars" className="text-blue-500 hover:underline" target="_blank">@webstars</a> and <a href="https://www.tiktok.com/@internetmoneysagas" className="text-blue-500 hover:underline" target="_blank">@internetmoneysagas</a>. I also dabble in freelance work so feel free contact me. </p>
           </div>
           
