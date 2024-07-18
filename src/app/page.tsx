@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
     <div className="flex flex-col w-full h-lvh items-center">
-      <div className="flex flex-col lg:w-1/2 lg:pt-20 pt-20 px-10">
+      <div className="flex flex-col md:w-1/2 lg:w-1/2 md:pt-20 lg:pt-20 pt-20 px-10">
         <section>
           <HeaderComponent />
         </section>

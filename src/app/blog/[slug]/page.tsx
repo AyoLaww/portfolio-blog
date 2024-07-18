@@ -24,18 +24,18 @@ export default async function BlogPage({ params }: { params: {slug: string } }){
     return(
         <>
         <div className="flex flex-col w-full h-lvh items-center">
-            <div className="flex flex-col lg:w-1/2 lg:pt-20 pt-20 px-10">
+            <div className="flex flex-col md:w-1/2 lg:w-1/2 md:pt-20 lg:pt-20 pt-20 px-10">
                 <div className="flex flex-row gap-5 mb-5 ">
                     <p className="text-xl font-bold tracking-tighter opacity-50">blog</p>
                     <Link href='/' className="text-xl font-bold tracking-tighter underline decoration-sky-400">home</Link>
                 </div>
                 
                 <h2 className="font-robotomono tracking-tighter lg:text-lg font-bold opacity-60 mb-5">{data.publishedAt}</h2>
-                <h1 className="text-xl lg:text-4xl font-bold tracking-tight">{data.title}</h1>
+                <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold tracking-tight">{data.title}</h1>
 
                 <hr className="border-black my-10 opacity-50"/>
 
-                <div className="prose prose-blue prose-lg font-medium text-justify opacity-80 prose-a:text-sky-500 prose-a:underline prose-a:underline-offset-2">
+                <div className="prose prose-blue prose-sm md:prose-lg lg:prose-lg font-medium text-justify opacity-80 prose-a:text-sky-500 prose-a:underline prose-a:underline-offset-2">
                     <PortableText value={data.content}/>
                 </div>
 
