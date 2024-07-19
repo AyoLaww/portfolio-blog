@@ -22,9 +22,9 @@ export async function BlogComponent(){
         <div className="flex flex-col mt-10">
           <h1 className="text-xl font-bold opacity-50">Blog</h1>
           {data.map((post, idx) => (
-            <ul key={idx} className="pt-5 font-medium flex flex-col gap-5 opacity-80">
-              <a href={`/blog/${post.currentSlug}`} className="hover:underline">
-                <li>{post.title}<span className="font-bold font-robotomono ml-10 opacity-50">{post.publishedAt}</span></li>
+            <ul key={idx} className="pt-5 font-bold flex flex-col gap-5 opacity-80">
+              <a href={`/blog/${post.currentSlug}`}>
+                <li><span className="lg:hover:underline md:hover:underline underline-offset-2 decoration-sky-400 decoration-2">{post.title}</span><span className="font-bold font-robotomono ml-10 opacity-50">{post.publishedAt}</span></li>
               </a>
               
             </ul>
