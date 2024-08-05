@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google"
 import { Montserrat, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { DockComponent } from "@/components/DockComponent";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -35,7 +36,12 @@ export default function RootLayout({
       <body className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable, montserrat.variable, robotomono.variable
-        )}>{children}</body>
+        )}>
+          <div className="hidden lg:flex">
+          <DockComponent/>
+          </div>
+          {children}
+          </body>
     </html>
   );
 }

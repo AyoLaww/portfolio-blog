@@ -1,4 +1,5 @@
 import { BlogComponent } from "@/components/BlogComponent";
+import { DockComponent } from "@/components/DockComponent";
 import { HeaderComponent } from "@/components/HeaderComponent";
 
 

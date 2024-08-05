@@ -27,7 +27,7 @@ export default async function BlogPage({ params }: { params: {slug: string } }){
             <div className="flex flex-col md:w-1/2 lg:w-1/2 md:pt-20 lg:pt-20 pt-20 px-10">
                 <div className="flex flex-row gap-5 mb-5 ">
                     <p className="text-xl font-bold tracking-tighter opacity-50">blog</p>
-                    <Link href='/' className="text-xl font-bold tracking-tighter underline decoration-sky-400">home</Link>
+                    <Link href='/' className="text-xl font-bold tracking-tighter underline decoration-sky-400 lg:hidden">home</Link>
                 </div>
                 
                 <h2 className="font-robotomono tracking-tighter lg:text-lg font-bold opacity-60 mb-5">{data.publishedAt}</h2>
