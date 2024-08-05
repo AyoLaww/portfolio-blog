@@ -37,9 +37,7 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable, montserrat.variable, robotomono.variable
         )}>
-          <div className="hidden lg:flex">
           <DockComponent/>
-          </div>
           {children}
           </body>
     </html>

@@ -5,40 +5,43 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/t
 
 export function DockComponent(){
     return (
-        <Dock direction="middle">
+        <div className="hidden lg:flex">
+            <Dock direction="middle">
 
-            <DockIcon>
-            <TooltipProvider>
-                    <Tooltip>
-                        <TooltipTrigger>
-                            <Link href="/">
-                                <House size={25} strokeWidth={1.5} className="hover:cursor-pointer lg:hover:text-sky-500 ease-in-out lg:duration-200 md:hover:text-sky-500 md:duration-200" />
-                            </Link>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                            <p>Home</p>
-                        </TooltipContent>
-                    </Tooltip>
-                </TooltipProvider>
-                
-            </DockIcon>
-
-            <DockIcon>
+                <DockIcon>
                 <TooltipProvider>
-                    <Tooltip>
-                        <TooltipTrigger>
-                            <Link href="#">
-                                <Folder size={25} strokeWidth={1.5} className="hover:cursor-pointer opacity-50 lg:hover:text-sky-500 ease-in-out lg:duration-200 md:hover:text-sky-500 md:duration-200" />
-                            </Link>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                            <p>Projects (Coming soon)</p>
-                        </TooltipContent>
-                    </Tooltip>
-                </TooltipProvider>
-                
-            </DockIcon>
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <Link href="/">
+                                    <House size={25} strokeWidth={1.5} className="hover:cursor-pointer lg:hover:text-sky-500 ease-in-out lg:duration-200 md:hover:text-sky-500 md:duration-200" />
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Home</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
+                    
+                </DockIcon>
 
-      </Dock>
+                <DockIcon>
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <Link href="#">
+                                    <Folder size={25} strokeWidth={1.5} className="hover:cursor-pointer opacity-50 lg:hover:text-sky-500 ease-in-out lg:duration-200 md:hover:text-sky-500 md:duration-200" />
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Projects (Coming soon)</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
+                    
+                </DockIcon>
+
+            </Dock>
+        </div>
+        
     )
 }
