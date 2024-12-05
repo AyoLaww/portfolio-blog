@@ -34,8 +34,8 @@ export async function BlogComponent(){
     )
 }
 
-<ul className="pt-5 font-medium flex flex-col gap-5 opacity-80">
+{/* <ul className="pt-5 font-medium flex flex-col gap-5 opacity-80">
             <li>Title of the blog 1 <span className="font-bold font-robotomono ml-10 opacity-50">Date of the blog</span></li>
             <li>Title of the blog 1 <span className="font-bold font-robotomono ml-10 opacity-50">Date of the blog</span></li>
             <li>Title of the blog 1 <span className="font-bold font-robotomono ml-10 opacity-50">Date of the blog</span></li>
-          </ul>
+</ul> */}
